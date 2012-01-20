@@ -1,5 +1,0 @@
-Dependencies:
-  -- oh-my-zsh (https://github.com/robbyrussell/oh-my-zsh)
-  -- janus (https://github.com/carlhuda/janus)
-
-curl https://raw.github.com/adrianrego/dotfiles/master/bootstrap.sh -o- | sh
