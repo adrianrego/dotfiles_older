@@ -24,12 +24,22 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow pip vagrant gem rails3 knife node npm osx ruby)
+plugins=(bundler git git-flow knife python)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/share/python/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export NODE_PATH=/usr/local/lib/node_modules
+
+# Virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Code
+
+source /usr/local/share/python/virtualenvwrapper.sh
 
 # rbenv
 eval "$(rbenv init -)"
+
+# Java
+export JAVA_HOME=`/usr/libexec/java_home`
