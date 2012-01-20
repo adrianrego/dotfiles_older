@@ -1,8 +1,5 @@
-" The PC is fast enough, do syntax highlight syncing from start
-autocmd BufEnter * :syntax sync fromstart
-
 " Python
-au FileType python set ft=python.django colorcolumn=79
+" au FileType python set ft=python.django
 
 " Select HTML function to select appropriate template syntax
 function! s:SelectHTML()
@@ -21,3 +18,23 @@ function! s:SelectHTML()
 endfunction
 
 au BufRead *.html,*.htm call s:SelectHTML()
+
+" coffeetags --vim-conf --include-vars
+let g:tagbar_type_coffee = {
+\ 'kinds' : [
+\   'f:functions',
+\   'o:object'
+\ ],
+\ 'kind2scope' : {
+\  'f' : 'object',
+\   'o' : 'object'
+\},
+\ 'sro' : ".",
+\ 'ctagsbin' : 'coffeetags',
+\ 'ctagsargs' : '--include-vars ',
+\}
+
+set statusline = ""
+let g:Powerline_symbols = 'fancy'
+
+call janus#add_mapping('ctrlp', 'map', '<leader>b', ':CtrlPBuffer<CR>')

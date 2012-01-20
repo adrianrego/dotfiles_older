@@ -1,5 +1,5 @@
-My dotfiles tailored for use with:
+Dependencies:
   -- oh-my-zsh (https://github.com/robbyrussell/oh-my-zsh)
-  -- vimius (https://github.com/TechnoGate/vimius)
+  -- janus (https://github.com/carlhuda/janus)
 
 curl https://raw.github.com/adrianrego/dotfiles/master/bootstrap.sh -o- | sh

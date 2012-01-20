@@ -1,7 +1,13 @@
-" Menus
-" This must happen before the syntax system is enabled
-let no_buffers_menu=1
-set mousemodel=popup
-
 " Leader
 let mapleader = ","
+
+" Disable some Janus plugins I don't use
+call janus#disable_plugin('buffergator')
+call janus#disable_plugin('easymotion')
+call janus#disable_plugin('kwbd')
+call janus#disable_plugin('narrowregion')
+call janus#disable_plugin('rename2')
+call janus#disable_plugin('unimpaired')
+call janus#disable_plugin('vimwiki')
+call janus#disable_plugin('watchtower')
+call janus#disable_plugin('zoomwin')
