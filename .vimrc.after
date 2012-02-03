@@ -1,5 +1,5 @@
 " Python
-" au FileType python set ft=python.django
+au FileType python set ft=python.django
 
 " Select HTML function to select appropriate template syntax
 function! s:SelectHTML()
@@ -34,7 +34,4 @@ let g:tagbar_type_coffee = {
 \ 'ctagsargs' : '--include-vars ',
 \}
 
-set statusline = ""
 let g:Powerline_symbols = 'fancy'
-
-call janus#add_mapping('ctrlp', 'map', '<leader>b', ':CtrlPBuffer<CR>')
