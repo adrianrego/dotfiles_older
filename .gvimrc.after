@@ -1,4 +1,6 @@
 if has("gui_macvim")
+  " Using a patched Ubunto Mono font for Powerline fancy symbols
+  " https://github.com/scotu/ubuntu-mono-powerline
   set guifont=Ubuntu\ Mono:h14
 else
   set guifont=DejaVu\ Sans\ Mono\ 12

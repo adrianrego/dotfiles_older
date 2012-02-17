@@ -1,4 +1,4 @@
-" Python
+" Default to python.django for all python files
 au FileType python set ft=python.django
 
 " Select HTML function to select appropriate template syntax
@@ -20,6 +20,7 @@ endfunction
 au BufRead *.html,*.htm call s:SelectHTML()
 
 " coffeetags --vim-conf --include-vars
+" requires CoffeeTags gem
 let g:tagbar_type_coffee = {
 \ 'kinds' : [
 \   'f:functions',
@@ -34,4 +35,10 @@ let g:tagbar_type_coffee = {
 \ 'ctagsargs' : '--include-vars ',
 \}
 
+" Requires a pactched font
 let g:Powerline_symbols = 'fancy'
+
+" Disable syntastic for html files
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['html'] }

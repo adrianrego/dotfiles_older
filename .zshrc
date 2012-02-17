@@ -20,16 +20,16 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler git git-flow knife python)
+plugins=(brew bundler django git python npm pip rbenv vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
 # Virtualenvwrapper
@@ -38,8 +38,8 @@ export PROJECT_HOME=$HOME/Code
 
 source /usr/local/share/python/virtualenvwrapper.sh
 
-# rbenv
-eval "$(rbenv init -)"
+# rbenv sourcing done by rbenv plugin
+#eval "$(rbenv init -)"
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
