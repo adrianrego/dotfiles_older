@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler django git python npm pip rbenv vagrant)
+plugins=(brew bundler django git python npm pip vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,7 +39,11 @@ export PROJECT_HOME=$HOME/Code
 source /usr/local/share/python/virtualenvwrapper.sh
 
 # rbenv sourcing done by rbenv plugin
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
+
+# Autocorrect
+alias pip='nocorrect pip'
+alias vagrant='nocorrect vagrant'
