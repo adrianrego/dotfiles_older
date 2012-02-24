@@ -35,8 +35,18 @@ let g:tagbar_type_coffee = {
 \ 'ctagsargs' : '--include-vars ',
 \}
 
-" Requires a pactched font
-let g:Powerline_symbols = 'fancy'
+
+" Colorcscheme
+color jellybeans
+
+" Override existing colorscheme with version in
+" ~/.janus/<colorscheme>/colors/<colorscheme>.vim
+if exists("g:colors_name") 
+  let color_override = expand('~/.janus/' . g:colors_name . '/colors/' . g:colors_name . '.vim')
+  if filereadable(color_override)
+    exe 'source ' . color_override
+  endif
+endif
 
 " Disable syntastic for html files
 let g:syntastic_mode_map = { 'mode': 'active',
