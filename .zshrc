@@ -47,3 +47,4 @@ export JAVA_HOME=`/usr/libexec/java_home`
 # Autocorrect
 alias pip='nocorrect pip'
 alias vagrant='nocorrect vagrant'
+alias fab='nocorrect fab'

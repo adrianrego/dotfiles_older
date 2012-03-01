@@ -1,13 +1,3 @@
-if has("gui_macvim")
-  " Using a patched Ubunto Mono font for Powerline fancy symbols
-  " https://github.com/scotu/ubuntu-mono-powerline
-  set guifont=Ubuntu\ Mono:h14
-  
-  " Requires a pactched font
-  let g:Powerline_symbols = 'fancy'
-else
-  set guifont=DejaVu\ Sans\ Mono\ 12
-endif
-
+set guifont=Menlo:h12
 set guioptions=-t
 set lines=44 columns=169
