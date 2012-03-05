@@ -1,0 +1,12 @@
+[submodule ".janus/powerline"]
+	path = .janus/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule ".janus/css3"]
+	path = .janus/css3
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule ".janus/less"]
+	path = .janus/less
+	url = https://github.com/groenewege/vim-less.git
+[submodule ".janus/pep8"]
+	path = .janus/pep8
+	url = https://github.com/adrianrego/vim-pep8.git
