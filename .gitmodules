@@ -10,3 +10,6 @@
 [submodule ".janus/pep8"]
 	path = .janus/pep8
 	url = https://github.com/adrianrego/vim-pep8.git
+[submodule ".janus/nerdtree-tabs"]
+	path = .janus/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
