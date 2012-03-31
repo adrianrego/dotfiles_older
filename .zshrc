@@ -43,8 +43,7 @@ eval "$(rbenv init -)"
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r16
-export AKKA_HOME=/Users/adrian/Code/workspace/tools/akka-2.0
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r17
 
 # Autocorrect
 alias pip='nocorrect pip'
