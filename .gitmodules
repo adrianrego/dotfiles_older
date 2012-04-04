@@ -16,3 +16,6 @@
 [submodule ".janus/smartinput"]
 	path = .janus/smartinput
 	url = git://github.com/kana/vim-smartinput.git
+[submodule ".janus/sparkup"]
+	path = .janus/sparkup
+	url = git://github.com/sjl/vim-sparkup.git
