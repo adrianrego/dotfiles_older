@@ -13,9 +13,6 @@
 [submodule ".janus/nerdtree-tabs"]
 	path = .janus/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule ".janus/smartinput"]
-	path = .janus/smartinput
-	url = git://github.com/kana/vim-smartinput.git
 [submodule ".janus/sparkup"]
 	path = .janus/sparkup
 	url = git://github.com/sjl/vim-sparkup.git
