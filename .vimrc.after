@@ -37,8 +37,8 @@ let g:tagbar_type_coffee = {
 
 
 " Colorcscheme
-set background=light
-color solarized
+colorscheme solarized
+let g:Powerline_colorscheme="skwp"
 
 " Override existing colorscheme with version in
 " ~/.janus/<colorscheme>/colors/<colorscheme>.vim

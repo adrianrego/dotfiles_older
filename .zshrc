@@ -43,9 +43,12 @@ eval "$(rbenv init -)"
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r17
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r18
 
 # Autocorrect
 alias pip='nocorrect pip'
 alias vagrant='nocorrect vagrant'
 alias fab='nocorrect fab'
+
+# Colors
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
