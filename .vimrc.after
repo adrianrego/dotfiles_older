@@ -1,6 +1,9 @@
 " Default to python.django for all python files
 au FileType python set ft=python.django
 
+" Coffeescript
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
 " Select HTML function to select appropriate template syntax
 function! s:SelectHTML()
   let n = 1
