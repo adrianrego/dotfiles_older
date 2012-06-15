@@ -1,5 +1,5 @@
 " Default to python.django for all python files
-au FileType python setlocal ft=python.django
+au FileType python setlocal ft=python.django textwidth=0
 au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
 
 " Select HTML function to select appropriate template syntax
