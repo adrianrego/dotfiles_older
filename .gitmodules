@@ -4,9 +4,6 @@
 [submodule ".janus/css3"]
 	path = .janus/css3
 	url = https://github.com/hail2u/vim-css3-syntax.git
-[submodule ".janus/less"]
-	path = .janus/less
-	url = https://github.com/groenewege/vim-less.git
 [submodule ".janus/nerdtree-tabs"]
 	path = .janus/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
