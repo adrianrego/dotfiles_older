@@ -16,3 +16,4 @@
     default = tracking
 [core]
     excludesfile = "~/.gitexcludes"
+    editor = mvim -f
