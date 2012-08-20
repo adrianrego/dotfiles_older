@@ -24,11 +24,12 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler django git python npm pip vagrant)
+plugins=(gem git pip svn vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export EDITOR=mvim
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
@@ -38,12 +39,14 @@ export PROJECT_HOME=$HOME/Code
 
 source /usr/local/share/python/virtualenvwrapper.sh
 
-# rbenv sourcing done by rbenv plugin
+# rbenv sourcing
 eval "$(rbenv init -)"
+
+# Tmux
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r18
 
 # Autocorrect
 alias pip='nocorrect pip'
