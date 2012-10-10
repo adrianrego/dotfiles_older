@@ -41,9 +41,6 @@ source /usr/local/share/python/virtualenvwrapper.sh
 # rbenv sourcing
 eval "$(rbenv init -)"
 
-# Tmux
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
 
